@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMZKSA STORE | متجر الرمز لخدمات فايف إم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rmz-gold: #c5a059;
+            --rmz-dark: #0a0a0a;
+            --rmz-card: #121212;
+            --rmz-accent: #ffffff;
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--rmz-dark);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .rmz-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+        }
+        .gold-border {
+            border: 1px solid var(--rmz-gold);
+        }
+        .gold-text {
+            color: var(--rmz-gold);
+        }
+        .gold-button {
+            background-color: var(--rmz-gold);
+            color: #000;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .gold-button:hover {
+            background-color: #e6bc6a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+        }
+        .card-hover:hover {
+            border-color: var(--rmz-gold);
+            background: #181818;
+        }
+        .neon-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--rmz-gold), transparent);
+        }
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.3));
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="p-6 border-b border-white/5 bg-black/50 backdrop-blur-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- Logo Container -->
+                <div class="flex items-center justify-center p-1 border border-[#c5a059]/30 rounded-lg bg-black/40">
+                    <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="RMZKSA Logo" class="logo-img">
+                </div>
+                <div class="text-2xl font-black rmz-font tracking-widest uppercase">
+                    RMZKSA<span class="gold-text">STORE</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-sm">
+                <a href="#home" class="hover:text-[#c5a059] transition text-gray-300">الرئيسية</a>
+                <a href="#services" class="hover:text-[#c5a059] transition text-gray-300">الخدمات</a>
+                <a href="#about" class="hover:text-[#c5a059] transition text-gray-300">من نحن</a>
+            </div>
+            <a href="https://discord.gg/JzFmRs46sm" target="_blank" class="gold-button px-6 py-2 rounded-md font-bold text-sm">دخول المتجر</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-24 relative">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-[#c5a059] font-bold tracking-[0.5em] mb-4 rmz-font uppercase">The Code of Excellence</h2>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight">
+                وجهتـك الأولـى <br>لأنظمـة <span class="gold-text">الرول بلاي</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto mb-12">
+                في RMZKSA STORE، نصمم لك مواقع قطاعات حكومية متطورة، مربوطة بالكامل مع الديسكورد لجعل إدارة سيرفرك أكثر احترافية وسهولة.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://discord.gg/JzFmRs46sm" target="_blank" class="gold-button px-10 py-4 rounded-full font-black text-lg text-center">اطلب نظامك الآن</a>
+            </div>
+        </div>
+        <div class="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a059]/30 to-transparent"></div>
+    </section>
+
+    <!-- Statistics -->
+    <div class="container mx-auto px-4 -mt-12 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div class="bg-black border border-white/5 p-8 rounded-2xl text-center">
+                <div class="text-4xl font-black gold-text rmz-font">100%</div>
+                <div class="text-xs text-gray-500 mt-2 font-bold uppercase tracking-widest">ضمان الحماية</div>
+            </div>
+            <div class="bg-black border border-white/5 p-8 rounded-2xl text-center">
+                <div class="text-4xl font-black gold-text rmz-font">24/7</div>
+                <div class="text-xs text-gray-500 mt-2 font-bold uppercase tracking-widest">دعم فني</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Services -->
+    <section id="services" class="py-32 container mx-auto px-4">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-black mb-4">خدمات RMZKSA المتميزة</h2>
+            <div class="neon-line w-40 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Government Site -->
+            <div class="card-hover p-10 rounded-3xl bg-[#121212] border border-white/5 transition-all group">
+                <div class="mb-8 text-6xl">🏛️</div>
+                <h3 class="text-2xl font-black mb-4 group-hover:text-[#c5a059] transition">مواقع القطاعات الحكومية</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    مواقع مخصصة (شرطة، إسعاف، جيش) تتضمن أنظمة رتب، ملفات موظفين، ونظام مخالفات مربوط بقاعدة البيانات.
+                </p>
+            </div>
+
+            <!-- Application System -->
+            <div class="card-hover p-10 rounded-3xl bg-[#121212] border border-white/5 transition-all group">
+                <div class="mb-8 text-6xl">📄</div>
+                <h3 class="text-2xl font-black mb-4 group-hover:text-[#c5a059] transition">نظام التقديم المتقدم</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    وداعاً للنماذج التقليدية. نظام تقديم ذكي يفرز اللاعبين، يختبرهم، ويرسل النتائج للديسكورد.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why RMZKSA? -->
+    <section id="about" class="py-24 bg-white/5">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <h2 class="text-4xl font-black mb-8 leading-tight">لماذا تختار <span class="gold-text">RMZKSA STORE</span>؟</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-[#c5a059]/10 rounded-xl flex items-center justify-center font-black gold-text rmz-font">01</div>
+                        <div>
+                            <h4 class="font-bold mb-2 text-white">خبرة واسعة في برمجيات FiveM</h4>
+                            <p class="text-sm text-gray-500">نحن نعرف ما يحتاجه صاحب السيرفر وما يعاني منه اللاعب، لذا صممنا حلولاً واقعية.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-[#c5a059]/10 rounded-xl flex items-center justify-center font-black gold-text rmz-font">02</div>
+                        <div>
+                            <h4 class="font-bold mb-2 text-white">سرعة التسليم والدقة</h4>
+                            <p class="text-sm text-gray-500">مواقعنا جاهزة للعمل فوراً، مع شرح كامل لطريقة التركيب والربط.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 shrink-0 bg-[#c5a059]/10 rounded-xl flex items-center justify-center font-black gold-text rmz-font">03</div>
+                        <div>
+                            <h4 class="font-bold mb-2 text-white">دعم فني متخصص</h4>
+                            <p class="text-sm text-gray-500">لا نتركك بعد البيع، نحن معك في حال واجهت أي مشكلة في الربط أو التحديث.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-full aspect-video bg-[#1a1a1a] rounded-3xl gold-border flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                    <!-- Central Logo Background -->
+                    <div class="absolute z-10 opacity-20 transform scale-[2.5] blur-[1px]">
+                         <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="RMZ BG">
+                    </div>
+                    <div class="absolute text-center z-20">
+                         <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="RMZ Main" class="w-24 h-24 mx-auto mb-4 drop-shadow-[0_0_15px_rgba(197,160,89,0.5)]">
+                        <p class="rmz-font font-black tracking-[0.3em] text-white">KING OF SYSTEMS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center gap-6">
+                <!-- Footer Logo -->
+                <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="Footer Logo" class="w-16 h-16 opacity-80 grayscale hover:grayscale-0 transition duration-500">
+                
+                <div>
+                    <div class="text-2xl font-black rmz-font tracking-widest uppercase">
+                        RMZKSA<span class="gold-text">STORE</span>
+                    </div>
+                    <p class="text-gray-600 text-xs mt-2 uppercase tracking-widest">Top-tier FiveM Web Solutions</p>
+                </div>
+
+                <!-- Keeping only Discord as requested -->
+                <div class="flex gap-8 text-sm font-bold uppercase tracking-widest">
+                    <a href="https://discord.gg/JzFmRs46sm" target="_blank" class="hover:text-[#c5a059] transition text-white no-underline border-b border-white/10 pb-1">ديسكورد</a>
+                </div>
+
+                <div class="mt-8 text-[10px] text-gray-800 uppercase tracking-widest">
+                    &copy; 2026 RMZKSA STORE. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
