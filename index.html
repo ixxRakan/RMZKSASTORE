@@ -56,8 +56,21 @@
         .logo-img {
             width: 45px;
             height: 45px;
-            object-fit: contain;
-            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.3));
+            object-fit: cover;
+            border-radius: 8px;
+            filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.5));
+        }
+        .logo-large {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            filter: drop-shadow(0 0 15px var(--rmz-gold));
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px var(--rmz-gold)); }
+            50% { transform: scale(1.05); filter: drop-shadow(0 0 25px var(--rmz-gold)); }
         }
     </style>
 </head>
@@ -67,8 +80,9 @@
     <nav class="p-6 border-b border-white/5 bg-black/50 backdrop-blur-lg sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center p-1 border border-[#c5a059]/30 rounded-lg bg-black/40">
-                    <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="RMZKSA Logo" class="logo-img">
+                <div class="flex items-center justify-center p-1 border border-[#c5a059]/30 rounded-lg bg-black/40 overflow-hidden">
+                    <!-- تحديث اللوقو بالرابط الجديد -->
+                    <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476081046851293256/unnamed.jpg?ex=699fd319&is=699e8199&hm=bfdd850ef3871d16ac35910c3f4676d930ad6d394e80a053bf93aab05ed5d2c2&" alt="RMZKSA Logo" class="logo-img">
                 </div>
                 <div class="text-2xl font-black rmz-font tracking-widest uppercase">
                     RMZKSA<span class="gold-text">STORE</span>
@@ -108,16 +122,14 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Service 1: Gov Sites -->
             <div class="card-hover p-8 rounded-3xl bg-[#121212] border border-white/5 transition-all">
                 <div class="text-4xl mb-6">🏛️</div>
                 <h3 class="text-xl font-bold mb-4 gold-text">مواقع القطاعات</h3>
                 <p class="text-gray-500 text-sm leading-relaxed">
-                    تصميم مواقع رسمية للشرطة والإسعاف تشمل سجلات الموظفين، البلاغات، ونظام الرتب المتقدم.
+                    تصميم مواقع رسمية للشرطة والإسعاف والقطاعات العسكرية تشمل سجلات الموظفين، البلاغات، ونظام الرتب المتقدم.
                 </p>
             </div>
 
-            <!-- Service 2: Training Courses -->
             <div class="card-hover p-8 rounded-3xl bg-[#121212] border border-[#c5a059]/40 transition-all shadow-[0_0_20px_rgba(197,160,89,0.1)]">
                 <div class="text-4xl mb-6">🎓</div>
                 <h3 class="text-xl font-bold mb-4 gold-text">الدورات التدريبية</h3>
@@ -126,7 +138,6 @@
                 </p>
             </div>
 
-            <!-- Service 3: Applications -->
             <div class="card-hover p-8 rounded-3xl bg-[#121212] border border-white/5 transition-all">
                 <div class="text-4xl mb-6">📄</div>
                 <h3 class="text-xl font-bold mb-4 gold-text">أنظمة التقديم</h3>
@@ -151,7 +162,8 @@
             <div class="flex-1">
                 <div class="relative p-1 bg-gradient-to-br from-[#c5a059] to-transparent rounded-2xl">
                     <div class="bg-black p-8 rounded-2xl flex flex-col items-center">
-                         <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="RMZ" class="w-32 h-32 mb-4">
+                         <!-- تحديث اللوقو الكبير في قسم "من نحن" -->
+                         <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476081046851293256/unnamed.jpg?ex=699fd319&is=699e8199&hm=bfdd850ef3871d16ac35910c3f4676d930ad6d394e80a053bf93aab05ed5d2c2&" alt="RMZ Large Logo" class="logo-large mb-4">
                          <p class="rmz-font font-bold gold-text">KING OF SYSTEMS</p>
                     </div>
                 </div>
@@ -163,7 +175,8 @@
     <footer class="py-12 border-t border-white/5 bg-black">
         <div class="container mx-auto px-4 text-center">
             <div class="flex flex-col items-center gap-6">
-                <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476070796832014446/178da94d-6900-426d-bc10-a08cc2f8dd21-medium.webp?ex=699fc98e&is=699e780e&hm=27b16ab913567c406528ae1ebe19039d68d44def157d1e5ac24842664380b2c0&" alt="Footer Logo" class="w-12 h-12 opacity-80">
+                <!-- تحديث لوقو التذييل -->
+                <img src="https://cdn.discordapp.com/attachments/1476046017534103784/1476081046851293256/unnamed.jpg?ex=699fd319&is=699e8199&hm=bfdd850ef3871d16ac35910c3f4676d930ad6d394e80a053bf93aab05ed5d2c2&" alt="Footer Logo" class="w-16 h-16 opacity-80 rounded-lg object-cover">
                 
                 <div>
                     <div class="text-xl font-black rmz-font tracking-widest uppercase">
